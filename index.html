@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <!-- <div class="container">
+    <div class="container">
       <h1>IP Tracker</h1>
 
       <div class="yourIp">
@@ -22,21 +22,17 @@
           class="fa fa-map-marker"
           style="font-size: 23px; color: rgba(240, 248, 255, 0.342)"
         ></i>
-        <input
-          type="text"
-          id="ipInput"
-          placeholder="Enter IP address"
-          required
-        />
+        <input type="text" id="ipInput" required />
 
         <button class="submitBtn" type="submit">Track IP</button>
       </form>
       <div id="result"></div>
-    </div> -->
+    </div>
     <div class="iPcontent">
-      <div class="head">
+      <h1>Tracked IP</h1>
+      <div class="head info">
         <div class="flag">
-          <img src="" alt="country flag" />
+          <img src="./world.jpeg" alt="country flag" />
         </div>
         <div class="country">
           <p>
@@ -50,15 +46,15 @@
           <tr class="table-header">
             <th><i class="fa fa-map-marker"></i></th>
             <th>location</th>
-            <th><i class="fa fa fa-copy"></i></th>
+            <th class="copy"><i class="fa fa fa-copy"></i></th>
           </tr>
           <tr>
             <td>City</td>
-            <td>Ibadan</td>
+            <td class="state">Ibadan</td>
           </tr>
           <tr>
             <td>Region</td>
-            <td>LA</td>
+            <td class="region">LA</td>
           </tr>
           <tr>
             <td>Zip</td>
@@ -71,15 +67,15 @@
           <tr class="table-header">
             <th>bearings</th>
             <th>Details</th>
-            <th><i class="fa fa fa-copy"></i></th>
+            <th class="copy"><i class="fa fa fa-copy"></i></th>
           </tr>
           <tr>
             <td>Longitude</td>
-            <td>Ibadan</td>
+            <td class="long">78479</td>
           </tr>
           <tr>
             <td>Latitude</td>
-            <td>LA</td>
+            <td class="lat">888888</td>
           </tr>
         </table>
       </div>

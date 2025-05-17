@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hidden {
+  display: none;
+}
 
 body {
   max-width: 100%;
@@ -65,10 +68,10 @@ form .fa-map-marker {
   height: 50px;
   border-radius: 15px;
   border: 1px solid rgba(255, 0, 0, 0.277);
-  padding: 20px 110px;
-  font-size: 20px;
+  padding: 20px 70px;
+  font-size: 15px;
   background: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.464);
   display: block;
   margin: auto;
 }
@@ -76,6 +79,7 @@ form .fa-map-marker {
   outline: none;
   border: 1px solid blueviolet;
 }
+
 .submitBtn {
   background-image: linear-gradient(
     to right,
@@ -103,7 +107,7 @@ form .fa-map-marker {
 
 .iPcontent,
 .location {
-  background-color: rgba(137, 43, 226, 0.426);
+  background-color: rgba(19, 0, 38, 0.426);
 }
 .iPcontent .head,
 .location,
@@ -123,6 +127,20 @@ form .fa-map-marker {
   gap: 40px;
   align-items: center;
   margin-bottom: 10px;
+}
+.iPcontent .head {
+  padding-left: 44px;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+.info {
+  -webkit-text-stroke: 0%;
+}
+.flag {
+  border: 1px solid rgb(255, 255, 255);
+}
+.flag img {
+  width: 100px;
+  height: 50px;
 }
 .iPcontent .head h3 {
   font-size: 20px;

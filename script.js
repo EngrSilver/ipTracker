@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 // const key = "3A9F57A25EA30F089DF31D367A02E632";
 // let ipAddress;
 
@@ -30,3 +30,46 @@
 //   }
 // };
 // getIP();
+//-------------------------------------------------------------------//
+const input = document.getElementById("ipInput");
+console.log(input);
+const message = " Enter IP Address...   ";
+let scrollIndex = 0;
+
+function scrollPlaceholder() {
+  input.placeholder =
+    message.substring(scrollIndex) + message.substring(0, scrollIndex);
+  scrollIndex = (scrollIndex + 1) % message.length;
+}
+setInterval(scrollPlaceholder, 300);
+
+//-------------------------------------------------------------------//
+
+const long = document.querySelector(".long");
+const lat = document.querySelector(".lat");
+const state = document.querySelector(".state");
+const region = document.querySelector(".region");
+
+const copy = Array.from(document.querySelectorAll(".copy"));
+copy[0].addEventListener("click", () => {
+  locationCopier();
+});
+copy[1].addEventListener("click", () => {
+  BearingCopier();
+});
+
+function BearingCopier() {
+  const lattext = lat.textContent;
+  const longtext = long.textContent;
+  const copiedText = lattext + " " + longtext;
+  navigator.clipboard.writeText(copiedText);
+  alert("Copied the text: " + copiedText);
+}
+function locationCopier() {
+  const stateText = state.textContent;
+  const regiontext = region.textContent;
+  const copiedText = stateText + " " + regiontext;
+  navigator.clipboard.writeText(copiedText);
+  alert("Copied the text: " + copiedText);
+}
+// -----------------------------------------------------------------//
