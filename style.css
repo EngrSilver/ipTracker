@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  min-width: 300px;
+  background-color: black;
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container,
+.iPcontent {
+  border: 1px solid blueviolet;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+h1 {
+  text-shadow: 2px 2px 2px wheat;
+  margin-bottom: calc(100vh / 9 - 0px);
+  font-size: 50px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.yourIp {
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./world.jpeg");
+}
+.yourIp p {
+  color: white;
+  background-color: rgba(62, 62, 62, 0.405);
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  font-weight: 900;
+}
+form {
+  position: relative;
+
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+form .fa-map-marker {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  transform: translateY(-50%);
+  color: white;
+}
+#ipInput {
+  text-align: center;
+  width: 110%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 0, 0, 0.277);
+  padding: 20px 110px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  display: block;
+  margin: auto;
+}
+#ipInput:focus {
+  outline: none;
+  border: 1px solid blueviolet;
+}
+.submitBtn {
+  background-image: linear-gradient(
+    to right,
+
+    rgba(255, 0, 0, 0.681) 0%,
+    rgba(137, 43, 226, 0.749) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-image, transform 0.3s;
+  margin-top: 10px;
+}
+.submitBtn:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(137, 43, 226, 0.857) 0%,
+    rgba(255, 0, 0, 0.776) 100%
+  );
+  transform: scale(1.05);
+}
+
+.iPcontent,
+.location {
+  background-color: rgba(137, 43, 226, 0.426);
+}
+.iPcontent .head,
+.location,
+.gps {
+  background-color: rgb(32, 32, 32);
+  border: 1px solid rgb(183, 106, 255);
+  color: blueviolet;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); */
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.iPcontent .head h3 {
+  font-size: 20px;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.iPcontent .head p span {
+  color: rgb(255, 255, 255);
+  padding-right: 10px;
+}
+table {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+th {
+  padding: 15px;
+  background-color: rgba(137, 43, 226, 0.353);
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+td {
+  padding: 8px;
+  text-align: left;
+}
